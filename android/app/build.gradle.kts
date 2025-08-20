@@ -7,8 +7,8 @@ plugins {
 
 android {
     namespace = "com.example.mensageiro"
-    compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    compileSdk = 33
+    ndkVersion = "25.2.9519653" // Certifique-se de que a versão do NDK está correta
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
@@ -24,10 +24,10 @@ android {
         applicationId = "com.example.mensageiro"
         // Você pode atualizar os seguintes valores conforme as necessidades do seu aplicativo.
         // Para mais informações, consulte: https://flutter.dev/docs/deployment/android#review-the-gradle-configuration.
-        minSdk = flutter.minSdkVersion
-        targetSdk = flutter.targetSdkVersion
-        versionCode = flutterVersionCode.toInteger()
-        versionName = flutterVersionName
+        minSdk = 21
+        targetSdk = 33
+        versionCode = 1 // Defina um valor padrão ou use uma propriedade personalizada
+        versionName = "1.0" // Defina um valor padrão ou use uma propriedade personalizada
     }
 
     buildTypes {
